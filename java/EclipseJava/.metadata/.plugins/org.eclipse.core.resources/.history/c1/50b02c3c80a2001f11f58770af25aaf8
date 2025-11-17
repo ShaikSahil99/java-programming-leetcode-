@@ -1,0 +1,21 @@
+package sample;
+import java.util.*;
+public class learning {
+
+	static Scanner z=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int x=z.nextInt();
+		int y=z.nextInt();
+		while(a<=y)
+		{
+			if(a>=x)
+			{
+				System.out.println(a+" ");
+			}
+			c=a+b;
+			a=b;
+			b=c;
+		}
+	}
+}

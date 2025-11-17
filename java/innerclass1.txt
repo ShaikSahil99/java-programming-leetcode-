@@ -1,0 +1,33 @@
+class A
+{
+	static Scanner sc=new Scanner(System.in);
+	private static int a=sc.nextInt();
+	String m1(int b)
+	{
+		System.out.print("hiii");
+		return sc.next();
+	}
+	A(String s)
+	{
+		System.out.print("PC of class A");
+	}
+	class B
+	{
+		int m2(float f)
+		{
+			return sc.nextFloat();
+		}
+	}
+	class C
+	{
+		long m3(char c)
+		{
+			return sc.nextLong();
+		}
+	}
+	public static void main(String[]arg)	
+	{
+		System.out.print(a);
+	}
+}
+      

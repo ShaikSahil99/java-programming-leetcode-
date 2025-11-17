@@ -1,0 +1,39 @@
+package sample;
+import java.util.*;
+public class Strings
+{
+	public static String Chars(String s)
+	{
+		int c=0; String result="";
+		outer:for(int i=0;i<s.length();i++)
+		{
+			char ch=s.charAt(i);
+			c++;
+			if(c%2==0)
+			{
+				result=result+ch;
+				continue outer;
+			}
+			else
+			{
+				if(Character.isUpperCase(ch))
+				{
+					result=result+(char)(ch+32);
+				}
+				else if(Character.isLowerCase(ch))
+				{
+					result=result+(char)(ch-32);
+				}
+			}
+		}
+		return result;
+	}
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+			Scanner me=new Scanner(System.in);
+			String s=me.nextLine();
+			System.out.print(Chars(s));
+	}
+
+}

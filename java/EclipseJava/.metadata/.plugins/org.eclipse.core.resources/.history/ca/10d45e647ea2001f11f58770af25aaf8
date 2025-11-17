@@ -1,0 +1,27 @@
+package sample;
+import java.util.*;
+public class learning {
+
+	static Scanner z=new Scanner(System.in);
+	public static void main(String[] args) {
+		int n=z.nextInt();
+		int j,p=2;int c=0;
+		for(int i=1;i<=n;)
+		{
+			for(j=2;j<=p;j++)
+			{
+				if(p%j==0)
+				{
+					break;
+				}
+			}
+			if(p==j)
+			{
+				System.out.println(j+" ");
+				i++;p++;
+			}
+			
+		}
+		
+	}
+}

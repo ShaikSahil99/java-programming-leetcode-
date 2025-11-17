@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class A
+{
+	static int arraylength(int a[],int i,int c)
+	{
+		
+		if(a[i]==null)
+		{
+			return c;
+		}
+		
+		return arraylength(a,i++,++c);;
+	}
+	public static void main(String[]arg)
+	{
+		int i=0;int c=0;
+		int a[]={1,2,3};
+		System.out.print(arraylength(a,i,c));
+	}
+}

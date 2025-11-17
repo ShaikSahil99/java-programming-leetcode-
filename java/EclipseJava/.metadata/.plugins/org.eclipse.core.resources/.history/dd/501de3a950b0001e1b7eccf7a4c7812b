@@ -1,0 +1,13 @@
+package sample;
+import java.util.*;
+public class Strings {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+			Scanner me=new Scanner(System.in);
+			String s="hiiiii ra moava ela ujnavvhs";
+			System.out.print(s.replace("a","k"));
+	}
+
+}

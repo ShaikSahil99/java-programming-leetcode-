@@ -1,0 +1,33 @@
+package sample;
+import java.util.*;
+public class learning {
+
+	static Scanner z=new Scanner(System.in);
+
+	static String BinarySearch(int s, int e, int []a,int k)
+	{
+		int mid=(s+e)/2;
+		if(a[mid]==k)
+		{
+			return "Found";
+		}
+		if(a[mid]>k)
+		{
+			BinarySearch(s,mid-1,a,k);
+		}
+		else if(a[mid]<k)
+		{
+			BinarySearch(mid+1,e,a,k);
+		}
+		return "Not Found";
+	}
+	public static void main(String[] args) 
+	{
+		int a[]= {2,4,7,9,12,23,34,56,76,87,91};
+		int k=z.nextInt();
+		System.out.print(BinarySearch(0,a.length,a,k));
+		
+		
+	}
+}
+ 

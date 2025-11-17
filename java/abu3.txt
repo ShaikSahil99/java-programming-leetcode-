@@ -1,0 +1,11 @@
+class A{
+     boolean display(a){
+     System.out.print(a);
+      }
+    public static void main(String[]args){
+      A obj = new A();
+      boolean a=true;
+      obj.display(a);
+}}
+      
+      

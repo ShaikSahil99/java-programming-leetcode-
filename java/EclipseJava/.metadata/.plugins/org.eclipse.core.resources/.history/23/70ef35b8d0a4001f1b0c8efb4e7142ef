@@ -1,0 +1,43 @@
+package sample;
+import java.util.*;
+public class learning {
+
+	static Scanner z=new Scanner(System.in);
+	int sumAll=0;
+	static int count(int n)
+	{
+		String s=""+n;
+		return s.length();
+		
+	}
+	static int rev(int n)
+	{
+		System.out.println(n+"   ");
+		int sum=0;
+		if(count(n)==1)
+		{
+			return sumAll;
+		}
+		while(n>0)
+		{
+			int r=n%10;
+			n=n/10;
+			sum+=r;
+		}
+		sumAll+=sum;
+		return rev(sum);
+	}
+	public static void main(String[] args) 
+	{
+		int n=z.nextInt();
+		if(count(n)>1)
+		{
+			System.out.println(rev(n));
+		}
+		else
+		{
+			System.out.println("Only Single");
+		}
+		
+	}
+}

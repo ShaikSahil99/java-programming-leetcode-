@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class A
+{
+    static Scanner sc=new Scanner(System.in);
+     static String m1(int a)
+     {
+		System.out.println(a);
+		return sc.next();
+      }
+      public static void main(String[]args)
+      {
+      	
+      }
+}
+class B extends A
+{
+	public static void main(String[]a)
+	{
+		System.out.print(m1(sc.nextInt));
+	}
+}
+      
+      

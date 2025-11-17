@@ -1,0 +1,42 @@
+class A
+{
+	String BLACK  = "\u001B[30m";
+        String RED    = "\u001B[31m";
+        String GREEN  = "\u001B[32m";
+        String YELLOW = "\u001B[33m";
+        String BLUE   = "\u001B[34m";
+        String PURPLE = "\u001B[35m";
+        String CYAN   = "\u001B[36m";
+        String WHITE  = "\u001B[37m";
+        String backred="\u001B[101m";
+        String backGREEN="\u001B[102m";
+        String backYELLOW="\u001B[103m";
+        String backBLUE="\u001B[104m";
+        String backPURPLE="\u001B[105m";
+        String bacKCYAN="\u001B[106m";
+        String backWHITE="\u001B[107m";
+        String ul="\u001B[21m";
+        String blink="\u001B[5m";
+        String bold="\u001B[1m";
+	void m1()
+	{
+		try
+		{
+			System.out.print(backBLUE+"\t\t\tLoading"+RESET);
+			for(int i = 1;i<=5;i++)
+			{	
+				Thread.sleep(1000);
+				System.out.print(GREEN+". "+RESET);
+			}
+		}
+		catch(Exception e)
+		{}
+		System.out.println(blink+PURPLE+"Abu is sexy GAY"+RESET);
+	}
+	public static void main(String[]args)
+	{
+		
+		m1();
+		
+	}	
+}

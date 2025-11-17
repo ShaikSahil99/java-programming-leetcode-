@@ -1,0 +1,24 @@
+package sample;
+import java.util.*;
+public class Strings {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+			Scanner me=new Scanner(System.in);
+			String s=me.nextLine();
+			String a[]=s.split(" ");
+			String big=a[0].length();
+			for(int i=1;i<a.length;i++)
+			{
+				if(a[i].length()>a[0].length)
+				{
+					big=a[i];
+				}
+			}
+			System.out.print(big);
+			
+			
+	}
+
+}

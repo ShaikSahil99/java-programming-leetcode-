@@ -1,0 +1,34 @@
+package sample;
+import java.util.*;
+public class Strings
+{
+	public static String ValidAdhaar(String s)
+	{
+		int c=0;
+		if(s.length()!=14)
+		{
+			return "Not";
+		}
+		for(int i=0;i<s.length();i++)
+		{
+			char ch=s.charAt(i);
+			if(!Character.isDigit(ch))
+			{
+				return "Not";
+			}
+			if((i==4||i==9) && ch!=' ')
+			{
+				return "Not";
+			}
+		}
+		return "";
+	}
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+			Scanner me=new Scanner(System.in);
+			String s=me.nextLine();
+			System.out.print(ValidAdhaar(s)+"Valid");
+	}
+
+}
